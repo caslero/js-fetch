@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+
+
+
+/**
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 25%;
+    
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+}*/
+
