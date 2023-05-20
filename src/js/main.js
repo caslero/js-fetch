@@ -21,10 +21,10 @@ const infoComic = async() => {
 
         // iteración con el foreach
         results.forEach((informacion) =>  {
-            nombreC = nombreC + informacion.name + '<br><br>';
-            estado = estado + informacion.status + '<br><br>';
-            especies = especies + informacion.species + '<br><br>';
-            episodio.push(informacion.episode.length);
+            nombreC = nombreC + `<div>${informacion.name}</div> <br>`;
+            estado = estado + `<div>${informacion.status} </div> <br>`;
+            especies = especies + `<div>${informacion.species} </div> <br>`;
+            episodio.push(`<div>${informacion.episode.length}</div>`);
         });
 
 
@@ -41,7 +41,7 @@ const infoComic = async() => {
         
         document.getElementById('titulo').innerHTML = nombreC;
         document.getElementById('estado').innerHTML = estado;
-        document.getElementById('episodio').innerHTML = episodio.join('<br><br>');
+        document.getElementById('episodio').innerHTML = episodio.join('<br>');
         
         document.getElementById('especies').innerHTML = especies;
         //document.getElementById('imagen').innerHTML = img;

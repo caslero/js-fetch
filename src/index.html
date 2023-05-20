@@ -11,34 +11,45 @@
 <body>
     <h1 class="text-center text-5xl py-10 font-bold">Utilizando APIs</h1>
 
-    <section class="container mx-auto flex justify-between xl:px-28">
-                      
-        <div class="basis-1/4 bg-red-200 rounded-tl-[30px]">
-            <p class="text-center text-2xl font-semibold mb-4 bg-[#8aa7db] h-12 rounded-tl-[20px]"> Nombre </p>
-            <div class="pl-10" id="titulo"></div>
-        </div>
+    <section class="bg-slate-400 w-full">
+        <div class="container mx-auto flex flex-col sm:flex-row sm:justify-between border-2 border-black">
 
-        <div class="basis-1/4 bg-red-200">
-            <p class="text-center text-2xl font-semibold mb-4 bg-[#8aa7db] h-12">Estado</p>
-            <div class="text-center" id="estado"></div>
+            <style>
+                .ds div:nth-of-type(odd) {
+                    background-color: rgb(149, 149, 209);                                      
+                }
+            </style>
+            
+            <div class="w-full flex flex-col items-center basis-1/4">
+                <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
+                          h-14 border-2 border-black border-l-0 border-t-0 mb-5">Nombre</p>               
+                <div class="w-36 ds" id="titulo"></div>                
+            </div>
+
+            <div class="w-full flex flex-col items-center basis-1/4">
+                <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
+                          h-14 border-2 border-black sm:border-l-0 sm:border-t-0 mb-5">Estado</p>
+                <div class="w-36 ds" id="estado"></div>
+            </div>
+            <div class="w-full flex flex-col items-center basis-1/4">
+                <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
+                          h-14 border-2 border-black sm:border-l-0 sm:border-t-0 mb-5">Especie</p>
+                <div class="w-36 ds" id="especies"></div>
+            </div>
+            <div class="w-full flex flex-col items-center basis-1/4">
+                <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
+                          h-14 border-2 border-black sm:border-x-0 sm:border-t-0 mb-5">Episodios</p>
+                <div class="w-36 ds" id="episodio"></div>
+            </div>
+            <!--<div>
+                <p>Imagen</p>
+                <div id="imagen"></div>
+            </div>
+            <div>
+                <p>Fecha Creacion</p>
+                <div id="creado"></div>
+            </div>-->
         </div>
-        <div class="basis-1/4 bg-red-200">
-            <p class="text-center text-2xl font-semibold mb-4 bg-[#8aa7db] h-12">Especie</p>
-            <div class="text-center" id="especies"></div>
-        </div>
-        <div class="basis-1/4 bg-red-200 rounded-tr-[30px]">
-            <p class="text-center text-2xl font-semibold mb-4 bg-[#8aa7db] h-12 rounded-tr-[20px]">Episodios</p>
-            <div class="text-center" id="episodio"></div>
-        </div>
-        <!--<div>
-            <p>Imagen</p>
-            <div id="imagen"></div>
-        </div>
-        <div>
-            <p>Fecha Creacion</p>
-            <div id="creado"></div>
-        </div>-->
-        
     </section>
     
 </body>
