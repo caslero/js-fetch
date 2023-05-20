@@ -41,7 +41,7 @@ const infoComic = async() => {
         
         document.getElementById('titulo').innerHTML = nombreC;
         document.getElementById('estado').innerHTML = estado;
-        document.getElementById('episodio').innerHTML = episodio.join('<br>');
+        document.getElementById(`episodio`).innerHTML = episodio.join('<br>');
         
         document.getElementById('especies').innerHTML = especies;
         //document.getElementById('imagen').innerHTML = img;

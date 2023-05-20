@@ -18,29 +18,55 @@
                 .ds div:nth-of-type(odd) {
                     background-color: rgb(149, 149, 209);                                      
                 }
+                .sc {
+                    width:150px; height:150px; overflow: scroll;
+                }
             </style>
+
+
             
             <div class="w-full flex flex-col items-center basis-1/4">
                 <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
-                          h-14 border-2 border-black border-l-0 border-t-0 mb-5">Nombre</p>               
-                <div class="w-36 ds" id="titulo"></div>                
+                          h-14 border-2 border-black border-l-0 border-t-0">Nombre</p>
+                <div class="overflow-auto h-32 sm:overflow-hidden flex sm:h-auto my-2">                 
+                    <div class="w-36 ds text-center" id="titulo"></div>
+                </div>                
             </div>
 
             <div class="w-full flex flex-col items-center basis-1/4">
                 <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
-                          h-14 border-2 border-black sm:border-l-0 sm:border-t-0 mb-5">Estado</p>
-                <div class="w-36 ds" id="estado"></div>
+                          h-14 border-2 border-black sm:border-l-0 sm:border-t-0">Estado</p>
+                <div class="overflow-auto h-32 sm:overflow-hidden flex sm:h-auto my-2">
+                    <div class="w-36 ds text-center" id="estado"></div>
+                </div>
             </div>
+
             <div class="w-full flex flex-col items-center basis-1/4">
                 <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
-                          h-14 border-2 border-black sm:border-l-0 sm:border-t-0 mb-5">Especie</p>
-                <div class="w-36 ds" id="especies"></div>
+                          h-14 border-2 border-black sm:border-l-0 sm:border-t-0">Especie</p>
+                <div class="overflow-auto h-32 sm:overflow-hidden flex sm:h-auto my-2">
+                    <div class="w-36 ds text-center" id="especies"></div>
+                </div>
             </div>
+
+            
             <div class="w-full flex flex-col items-center basis-1/4">
+                <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
+                          h-14 border-2 border-black sm:border-x-0 sm:border-t-0">Episodios</p>
+                <div class="overflow-auto h-32 sm:overflow-hidden flex sm:h-auto my-2">
+                    <div class="w-36 ds text-center" id="episodio"></div>
+                </div>
+            </div>
+
+            <!--<div class="w-full flex flex-col items-center basis-1/4">
                 <p class="flex items-center justify-center text-2xl font-semibold bg-pink-300 w-full
                           h-14 border-2 border-black sm:border-x-0 sm:border-t-0 mb-5">Episodios</p>
-                <div class="w-36 ds" id="episodio"></div>
-            </div>
+                <div class="sc mt-6">
+                    <div class="w-36 ds text-center" id="episodio"></div>
+                </div>
+            </div>-->
+
+
             <!--<div>
                 <p>Imagen</p>
                 <div id="imagen"></div>
