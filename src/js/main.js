@@ -21,10 +21,10 @@ const infoComic = async() => {
 
         // iteración con el foreach
         results.forEach((informacion) =>  {
-            nombreC = nombreC + `<div class="border-[1px] h-14">${informacion.name}</div>`;
-            estado = estado + `<div class="border-[1px] h-14">${informacion.status} </div>`;
-            especies = especies + `<div class="border-[1px] h-14">${informacion.species} </div>`;
-            episodio.push(`<div class="border-[1px] h-14">${informacion.episode.length}</div>`);
+            nombreC = nombreC + `<div class="border-[1px] border-black sa h-14 even:bg-blue-200">${informacion.name}</div>`;
+            estado = estado + `<div class="border-[1px] border-black border-l-0 sa h-14 even:bg-blue-200">${informacion.status} </div>`;
+            especies = especies + `<div class="border-[1px] border-black border-l-0 sa h-14 even:bg-blue-200">${informacion.species} </div>`;
+            episodio.push(`<div class="border-[1px] border-black border-l-0 sa h-14 even:bg-blue-200">${informacion.episode.length}</div>`);
         });
 
 
